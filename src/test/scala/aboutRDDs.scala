@@ -48,7 +48,7 @@ class AboutRDDs extends FunSuite with Matchers with TestSparkContext {
     // 'map' applies an operation to every element in an RDD, producing a new one
     val words = sc.parallelize(Array("ginger", "garlic", "coriander", "cumin"))
     val lengths = words.map(s => s.length)
-    //lengths.collect should be(Array(6, 6, 9, __))
+    lengths.collect should be(Array(6, 6, 9, __))
 
     // 'reduce' applies a function to combine all of the elements in an RDD into one value
     val totalLength = lengths.reduce((a, b) => a + b)

@@ -45,6 +45,7 @@ sbt "testOnly AboutKeyValuePairs"
 
 * Key-value pairs 
 * Operations on keys and values
+* Counting words
 
 # Sources of inspiration
 
