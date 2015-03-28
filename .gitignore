@@ -1,0 +1,21 @@
+# Emacs temp files
+*~
+\#*\#
+.\#*
+.ensime
+
+# JVM
+*.class
+*.cache
+
+# Project
+target/*
+project/build.properties
+project/target/*
+project/project/*
+project/project/build.properties
+
+# General
+*.log
+*.tar
+*.tar.gz
