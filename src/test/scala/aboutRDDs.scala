@@ -21,7 +21,7 @@ class AboutRDDs extends FunSuite with Matchers with TestSparkContext {
     val distributedData = sc.parallelize(data)
 
     // The RDD contains precisely the same data as the collection
-    // 'collect' gathers all values from the RDD into an Array, making it the reverse of 'parallelize'
+    // 'collect' gathers all values from the RDD into an Array, making it the reverse of 'parallelize' ('toArray' does the same thing)
     distributedData.collect should be(data)
 
     distributedData.count should be(data.size)
@@ -78,10 +78,10 @@ class AboutRDDs extends FunSuite with Matchers with TestSparkContext {
     val numbers = sc.parallelize(Array(27, 32, 21))
 
     // 'zip' combines two RDDs into one by pairing up corresponding elements
-    names.zip(numbers).collect should be(Array("Amy" -> 27, "Bob" -> 32, "Tim" -> __))
+    names.zip(numbers).collect should be(Array(__ -> __, __ -> __, __ -> __))
   }
 
-  test("putting it together") {
+  test("house prices") {
     // Here are some house prices given in pound sterling.
     // Complete the function below so that it removes any that cost more than £150,000 and converts the prices to US dollars using the ratio given
     // Only return unique prices
