@@ -8,11 +8,11 @@ parallelExecution in Test := false
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.0" % "test",
-  "org.apache.spark" %% "spark-core" % "1.1.1" % "provided"
+  "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
 //  "org.apache.spark" %% "spark-sql" % "1.1.1" % "provided",
 //  "org.apache.spark" %% "spark-hive" % "1.1.1" % "provided",
 //  "org.apache.spark" %% "spark-streaming" % "1.1.1",
 //  "org.apache.spark" %% "spark-streaming-kafka" % "1.1.1",
 //  "org.apache.spark" %% "spark-streaming-flume" % "1.1.1",
-//  "org.apache.spark" %% "spark-mllib" % "1.1.1",
+  "org.apache.spark" %% "spark-mllib" % "1.3.0"
 )

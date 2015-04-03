@@ -2,7 +2,7 @@
 
 A koan is an incomplete test. Complete it, and find enlightenment.
 
-This is an interactive tutorial on [Apache Spark](spark.apache.org) with Scala. There are a series of unit tests: some pass, illustrating simple concepts, while others fail, leaving you to write some code or fill in a gap. Where you see `__`, replace it with the correct value, and where you see `???`, replace it with a function body. Each test class has a Spark context called `sc` which is created by the `TestSparkContext` trait, giving you access to Spark's functionality.
+This is an interactive tutorial on [Apache Spark](spark.apache.org) with Scala. There are a series of unit tests: some already pass, while others require you to fill in the gaps to make them pass. Where you see `__`, replace it with the correct value, and where you see `???`, replace it with a function body. Each test class has a Spark context called `sc` which is created by the `TestSparkContext` trait, giving you access to Spark's functionality.
 
 While it may be possible to complete these exercises with no knowledge of Scala, it is assumed that you already have some familiarity with Scala and Scala collections.
 
@@ -51,6 +51,15 @@ sbt "testOnly AboutKeyValuePairs"
 * Joins
 * Subtract by key (set difference)
 * Co-group
+
+## MLLib: vectors and matrices
+
+```
+sbt "testOnly AboutVectors"
+```
+
+* Local vectors
+* Local matrices
 
 # Sources of inspiration
 

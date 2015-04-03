@@ -24,7 +24,7 @@ class AboutRDDs extends FunSuite with Matchers with TestSparkContext {
     // 'collect' gathers all values from the RDD into an Array, making it the reverse of 'parallelize' ('toArray' does the same thing)
     distributedData.collect should be(data)
 
-    distributedData.count should be(data.size)
+    distributedData.count should be(__)
     distributedData.first should be(__)
   }
 
