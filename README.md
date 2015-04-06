@@ -61,9 +61,17 @@ sbt "testOnly AboutVectors"
 * Local vectors
 * Local matrices
 
+## MLLib: statistics
+
+```
+sbt "testOnly AboutStatistics"
+```
+
+* Summary statistics
+* Correlations
+
 # Sources of inspiration
 
 * [The Spark Programming Guide](http://spark.apache.org/docs/1.2.1/programming-guide.html)
 * [Learn Scala with Koans](http://scalakoans.webfactional.com)
-
-
+* [Ruby koans](http://rubykoans.com)

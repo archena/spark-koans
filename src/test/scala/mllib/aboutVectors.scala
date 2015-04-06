@@ -7,7 +7,7 @@ import org.scalatest.Matchers
 import org.apache.spark.mllib.linalg._
 
 /**
- * Koans vectors and matrices
+ * Koans on vectors and matrices
  */
 class AboutVectors extends FunSuite with Matchers {
   // MLlib provides special data types for vectors and matrices intended for use in machine learning applications.
