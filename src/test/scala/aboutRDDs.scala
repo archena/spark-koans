@@ -90,6 +90,6 @@ class AboutRDDs extends FunSuite with Matchers with TestSparkContext {
 
     def prices(input: RDD[Int]): RDD[Double] = ???
 
-    prices(houses).collect should be(Array(201000.0, 225000.0, 180000.0, 187500.0))
+    prices(houses).collect should be(Array(180000.0, 187500.0, 225000.0, 180000.0, 201000.0))
   }
 }
